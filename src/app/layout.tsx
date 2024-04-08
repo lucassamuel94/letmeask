@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 
 import '@/styles/globals.css'
-import { ThemeProvider } from '@/components/theme-provider'
 import { siteConfig } from '@/lib/config/site'
 import { cn } from '@/lib/utils'
 import { fontHeading, fontSans } from '@/styles/fonts'
@@ -16,10 +15,6 @@ export const metadata: Metadata = {
     template: `%s - ${siteConfig.name}`
   },
   description: siteConfig.description,
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' }
-  ],
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',
@@ -34,13 +29,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
         className={cn(
           fontSans.variable,
           fontHeading.variable,
-          'min-h-screen bg-white font-sans text-neutral-700 antialiased'
+          'flex min-h-screen flex-col bg-white-background font-sans text-gray-dark antialiased'
         )}>
-        <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
-          <div className='relative flex min-h-screen flex-col'>
-            <div className='flex-1'>{children}</div>
-          </div>
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   )
