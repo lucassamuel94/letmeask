@@ -17,7 +17,7 @@ const config = {
         md: '2rem'
       },
       screens: {
-        '2xl': '1400px'
+        '2xl': '1148px'
       }
     },
     extend: {
@@ -30,7 +30,7 @@ const config = {
           medium: '#A8A8B3',
           light: '#DBDCDD',
           'medium-hover': '#7E7E86',
-          'light-hover': '#CECECE',
+          'light-hover': '#CECECE'
         },
         white: {
           background: '#F8F8F8',
@@ -39,12 +39,12 @@ const config = {
         black: '#29292E',
         shadow: '#050206',
         primary: {
-          DEFAULT: '#',
-          hover: '#6F4BD8',
+          DEFAULT: '#835AFD',
+          hover: '#6F4BD8'
         },
         danger: {
-          DEFAULT: '#',
-          hover: '#D73754,
+          DEFAULT: '#E73F5D',
+          hover: '#D73754'
         },
         pink: {
           dark: '#E559F9',
