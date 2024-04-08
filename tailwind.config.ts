@@ -24,6 +24,33 @@ const config = {
       spacing: {
         18: '72px'
       },
+      colors: {
+        gray: {
+          dark: '#737380',
+          medium: '#A8A8B3',
+          light: '#DBDCDD',
+          'medium-hover': '#7E7E86',
+          'light-hover': '#CECECE',
+        },
+        white: {
+          background: '#F8F8F8',
+          details: '#FEFEFE'
+        },
+        black: '#29292E',
+        shadow: '#050206',
+        primary: {
+          DEFAULT: '#',
+          hover: '#6F4BD8',
+        },
+        danger: {
+          DEFAULT: '#',
+          hover: '#D73754,
+        },
+        pink: {
+          dark: '#E559F9',
+          light: '#D67EE2'
+        }
+      },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },
